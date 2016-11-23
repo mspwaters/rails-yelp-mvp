@@ -1,0 +1,108 @@
+/* -------------------------------------
+ * CSS code specific to home page
+ * (margin/padding adjustments)
+ * ------------------------------------- */
+a {
+  color:#fe3815;
+  font-weight: bold;
+  font-size: large;
+  text-transform: uppercase; //not working...
+}
+
+a:hover {
+  color:#ffff00;
+  text-decoration:none;
+}
+
+h1 {
+  padding: 40px 0px;
+  font-weight: bold;
+  font-family: 'Delius Unicase', cursive;
+}
+
+#category-grey {
+  color: #6b6b6b;
+}
+
+.card {
+  height: 175px;
+  text-shadow: 0 2px 3px rgba(0,0,0,0.6);
+  // background-size: cover !important;
+  color: white;
+  position: relative;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  background: linear-gradient(135deg, #c3c4b6 25%, transparent 25%) -50px 0,
+  linear-gradient(225deg, #c3c4b6 25%, transparent 25%) -50px 0,
+  linear-gradient(315deg, #c3c4b6 25%, transparent 25%),
+  linear-gradient(45deg, #c3c4b6 25%, transparent 25%);	
+  background-size: 100px 100px;
+  background-color: #0a0e33;
+  box-shadow: 10px 10px 5px #888888;
+}
+.card-user {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.card-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.card-description {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.card-description h2 {
+  font-size: 24px;
+}
+.card-description p {
+  font-size: 13px;
+  }
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index:2;
+  background: black;
+  opacity: 0;
+}
+.card-link:hover{
+  opacity: 0.1;
+}
+
+.banner {
+  color: #fe3815;
+  text-align: center;
+  height: 100vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */ 
+  //background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:silver;
+    background-image: 
+      radial-gradient(circle at 100% 150%, silver 24%, white 25%, white 28%, silver 29%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+      radial-gradient(circle at 0    150%, silver 24%, white 25%, white 28%, silver 29%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+      radial-gradient(circle at 50%  100%, white 10%, silver 11%, silver 23%, white 24%, white 30%, silver 31%, silver 43%, white 44%, white 50%, silver 51%, silver 63%, white 64%, white 71%, transparent 71%, transparent),
+      radial-gradient(circle at 100% 50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent),
+      radial-gradient(circle at 0    50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent);
+    background-size:100px 50px;
+}
+.banner h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+}
+.banner p {
+  font-size: 20px;
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+}
